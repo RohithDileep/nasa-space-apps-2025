@@ -1,0 +1,47 @@
+/* App.css - Main application styles */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00d2ff, #3a47d5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #3a47d5, #ff0096);
+}
+
+/* Route transition animations */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
